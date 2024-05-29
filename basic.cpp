@@ -5,6 +5,8 @@ using namespace std;
 #define ll long long
 #define umap unordered_map
 
+template<typename T>
+
 void solve() {
 }
 
