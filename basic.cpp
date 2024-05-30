@@ -5,7 +5,8 @@ using namespace std;
 #define ll long long
 #define umap unordered_map
 
-template<typename T>
+// template<typename T>
+int countOccr(string &s, string sub) { int occrs=0, pos=0; while ( (pos = s.find(sub, pos)) != string::npos ) { occrs++; pos += sub.length(); } return occrs;}
 
 void solve() {
 }
