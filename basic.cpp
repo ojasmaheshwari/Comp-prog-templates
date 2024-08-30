@@ -3,9 +3,9 @@
 #include <bits/stdc++.h>
 
 using namespace std;
-typedef long long ll;
-typedef unordered_map umap;
-typedef vector v;
+#define ll long long
+#define umap unordered_map
+#define v vector
 
 template<typename T>
 T gcd(T a, T b) { T curr = 1; for (T i=1; i<=b; i++) {	if (a % i == 0 && b % i == 0) { curr = i;	} } return curr;}
