@@ -2,12 +2,12 @@
 
 using namespace std;
 
-#define ll long long
+#define int long long
 
 void solve() {
 }
 
-int main() {
+signed main() {
     ios_base::sync_with_stdio(0);
     cin.tie(NULL);
 
