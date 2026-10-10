@@ -24,6 +24,7 @@ void dbg(const Cont &cont) {
 	cout << '\n';
 }
 
+void dbg() {}
 template<Printable T, typename... Args>
 void dbg(const T &t, Args... args) {
 	cout<<t<<' ';
