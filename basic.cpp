@@ -24,12 +24,16 @@ void dbg(const Cont &cont) {
 	cout << '\n';
 }
 
-void dbg() {}
+void dbg() {
+	cout << '\n';
+}
 template<Printable T, typename... Args>
 void dbg(const T &t, Args... args) {
 	cout<<t<<' ';
 	dbg(args...);
 }
+
+constexpr bool multipleTestCases = true;
 
 void solve() {
 }
@@ -38,8 +42,11 @@ signed main() {
     ios_base::sync_with_stdio(0);
     cin.tie(NULL);
 
-    int t;
-    cin >> t;
+    int t = 1;
+	if (multipleTestCases) {
+		cin >> t;
+	}
+
     while (t--) {
 		solve();
     }
