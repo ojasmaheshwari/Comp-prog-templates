@@ -2,12 +2,12 @@ template<typename T>
 class SegTree {
 public:
     SegTree(vector<int> &A)
-    :   tree(4 * A.size(), 0), N(A.size())
+    :   tree(4 * A.size()), N(A.size())
     {
         if (N > 0) build(A, 0, 0, N - 1);
     };
 
-    int query(int L, int R) {
+    T query(int L, int R) {
         return query_(L, R, 0, N - 1, 0);
     }
 
@@ -20,8 +20,9 @@ private:
 
     T build(vector<int> &A, int i, int L, int R) {
         if (L == R) {
+			// Change here
             tree[i] = A[L];
-            return A[L];
+            return tree[i];
         }
 
         int mid = (L + R) / 2;
@@ -71,6 +72,7 @@ private:
     }
 
     T merge(const T &leftRes, const T &rightRes) {
+		// Change here
         return leftRes + rightRes;
     }
 };
